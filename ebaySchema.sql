@@ -1,0 +1,22 @@
+DROP DATABASE IF EXISTS greatbayDB;
+
+CREATE DATABASE greatbayDB;
+
+USE greatbayDB;
+
+CREATE TABLE items (
+    id INTEGER NOT NULL AUTO_INCREMENT,
+    item VARCHAR(60) NOT NULL,
+    catagory VARCHAR(60) NOT NULL,
+    bid INTEGER(50) NOT NULL,
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE bids (
+    id INTEGER NOT NULL AUTO_INCREMENT,
+    bid INTEGER NOT NULL,
+    PRIMARY KEY (id)
+);
+
+
+
